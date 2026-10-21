@@ -20,9 +20,11 @@ prediction) is implemented as the `cpm_predictor` class in the same file
 
 In order to test each configuration, the class object in predict.cc needs to be updated at line number 32.
 
-branch_predictor *p = new gshare_predictor (); // For Base GShare Predictor
-branch_predictor *p = new pm_predictor (); // For Assignment Pentium M Predictor
-branch_predictor *p = new cpm_predictor (); // For Extra Credit Complete Pentium M Predictor
+`branch_predictor *p = new gshare_predictor ();` // For Base GShare Predictor
+
+`branch_predictor *p = new pm_predictor ();` // For Assignment Pentium M Predictor
+
+`branch_predictor *p = new cpm_predictor ();` // For Extra Credit Complete Pentium M Predictor
 
 Each time the above line of code is changed, the following code must be rerun to generate a new run file:
 
